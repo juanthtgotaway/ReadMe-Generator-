@@ -27,12 +27,12 @@ const questions = [
     {
         type: "input",
         name: "Credits",
-        message: "Are there any collaborators? What about any third-party assets, or even tutorials that were followed to get end result?",
+        message: "Are there any collaborators? What about any third-party assets, or even tutorials that were followed to get end result? N/A if not applicable.",
     },
     {
         type: "input",
         name: "Tests",
-        message: "Write tests for your application and provide examples on how to run them here (if applicable):",
+        message: "Write tests for your application and provide examples on how to run them here (if applicable if not input N/A):",
     },
     {
         type: "list",
