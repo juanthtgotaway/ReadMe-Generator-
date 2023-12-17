@@ -32,11 +32,12 @@ const questions = [
     {
         type: "input",
         name: "Tests",
-        message: "Write tests for your application and provide examples on how to run them here:",
+        message: "Write tests for your application and provide examples on how to run them here (if applicable):",
     },
     {
         type: "list",
         name: "License",
+        message: "What license is being used?",
         choices: ["MIT", "GPLv2", "Apache", "GPLv3", "BSD 3-clause", "None"],
     },
     {
@@ -60,7 +61,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((responses) => {
-        console.log("Generating your ReadME File");
+        console.log("Generating your README File");
         writeToFile("./completed/README.md", generateMarkdown(responses));
     });
 }
